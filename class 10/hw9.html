@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Bootstrap 5 project 1</title>
+	<link rel="stylesheet" href="hw9.css">
+	<script src="https://kit.fontawesome.com/d839ef83f0.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="shortcut icon" type="image/png"href="icon/icon13.png">
+</head>
+<body>
+               <!--  navbar Section -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top naav">
+  <div class="container">
+    <a class="navbar-brand " href="#"><span class="text-warning font-weight-bolder">Build</span>Con</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active text-warning" aria-current="page" href="#Home" id="my-hover">Home</a>
+        </li>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#Team" id="my-hover">Team</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#contact" id="my-hover">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#service" id="my-hover">Service</a>
+        </li>
+        <li class="nav-item dropdown active">
+          <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           Projects
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item text-warning" href="#">Multi-Storied Building</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item text-warning" href="#">Duplex</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item text-warning" href="#">Triplex</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item text-warning" href="#">Interior and Exterior Design</a></li>
+          </ul>
+        </li>
+         <li>
+          <a href="#" class="nav-link active">
+            <i class="fa-solid fa-magnifying-glass text-warning"></i>
+          </a>
+        </li>
+        </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="ibox">
+        <button class="btn btn-outline-warning" type="submit" id="sbox">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+                      <!--  Carousel section -->
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="photo/home-1.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 class="my-txt text-warning">Your Dream House</h5>
+        <p  class="p-txt">Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Animi quos officiis totam, dolore quibusdam unde.</p>
+        <p><a href="#" class="btn btn-warning mt-2">Learn more</a></p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="photo/home-2.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 class="my-txt text-warning">Always Dedicated</h5>
+        <p class="p-txt">Lorem ipsum dolor sit, amet, consectetur adipisicing elit. Ipsa qui autem deleniti esse, totam. Quo!</p>
+        <p><a href="#" class=" btn btn-warning mt-2">Learn more</a></p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="photo/home-3.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 class="my-txt text-warning">True Construction</h5>
+        <p class="p-txt">Lorem ipsum dolor sit, amet, consectetur adipisicing elit. Labore quam tempora iure inventore earum blanditiis.</p>
+        <p><a href="#" class=" btn btn-warning mt-2">Learn more</a></p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+                        <!--  About Section -->
+<section id="about" class="about section-padding ">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-4 col-md-12">
+        <div class="about-img">
+          <img src="photo/about.jpg" alt="" class="img-fluid itm1">
+          <div class="itm2">
+            <h4 class="itm3">Coding Is Fun</h4>
+            <div class="line"></div>
+            <p class="itm4">Lorem ipsum dolor sit amet fugit, a commodi debitis.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-8 col-lg-8 col-md-12 ps-lg-5 mt-md-5">
+       <div class="about-text">
+         <h2> We Provide Best Quality <br>Services Ecer</h2>
+         <p>Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Consectetur possimus iste culpa non optio voluptates voluptas vel quia laborum. Veritatis nostrum accusantium accusamus quod, rerum consequatur corrupti saepe. Tempora ex reiciendis officiis voluptatum amet, </p><a href="#demo" data-bs-toggle=collapse  class="btn btn-warning  px-2 py-1 ">Read more</a> 
+        <div id="demo" class="collapse mb-1">
+          <p class="">
+            illo odio omnis veritatis illum error, esse ab, ullam quisquam dolorem placeat deserunt asperiores nesciunt debitis aliquid aut incidunt quas! Eveniet ducimus qui distinctio non veniam asperiores eos quas incidunt reprehenderit harum illo accusantium, et esse nobis sed tempore animi, dolorem. Consectetur repudiandae culpa inventore laboriosam enim at obcaecati ipsam libero corrupti velit est repellendus laudantium hic id, sequi voluptatibus ipsum nostrum excepturi, iusto possimus natus!
+          </p>
+        </div>
+         
+       </div> 
+      </div>
+    </div>
+  </div>
+</section>
+               <!-- Service section -->
+
+<section id="service" class="service-section-padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="section-header text-center pb-5">
+          <h2>Our Services</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis.</p>
+          <div class="line"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-lg-4 col-md-12 serrvice">
+         <div class="card text-balck text-center pb-2 itm-11">
+           <div class="card-body">
+             <i class="bi bi-subtract"></i>
+             <h3 class="card-title">Best Quality</h3>
+             <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident exercitationem ipsam minima. Exercitationem necessitatibus harum nostrum sint alias nisi aliquam.</p>
+             <button class="btn btn-warning text-dark">Read More</button>
+           </div>
+         </div> 
+        </div>
+        <div class="col-12 col-lg-4 col-md-12 serrvice">
+         <div class="card text-black text-center pb-2 itm-11">
+           <div class="card-body">
+             <i class="bi bi-globe2"></i>
+             <h3 class="card-title">Best Quality</h3>
+             <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident exercitationem ipsam minima. Exercitationem necessitatibus harum nostrum sint alias nisi aliquam.</p>
+             <button class="btn btn-warning text-dark">Read More</button>
+           </div>
+         </div> 
+        </div>
+        <div class="col-12 col-lg-4 col-md-12 serrvice">
+         <div class="card text-black text-center pb-2 itm-11">
+           <div class="card-body">
+             <i class="bi bi-house-door-fill"></i>
+             <h3 class="card-title">Best Quality</h3>
+             <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident exercitationem ipsam minima. Exercitationem necessitatibus harum nostrum sint alias nisi aliquam.</p>
+             <button class="btn btn-warning text-dark">Read More</button>
+           </div>
+         </div> 
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+                      <!--  portfolio section -->
+
+<section id="portfolio" class="portfolio section-padding">
+  <div class="container">
+      <div class="row">
+      <div class="col-md-12">
+        <div class="section-header text-center pb-5">
+          <h2>Our Projects</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis.</p>
+          <div class="line"></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-12 col-md-12 ">
+        <div class="card text-center bg-white pb-2">
+           <div class="card-body text-dark">
+            <div class="img-area mb-4">
+             <img src="photo/project-1.jpg" class="img-fluid" alt="">
+             </div>
+             <h3 class="card-title">Building Make</h3>
+             <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident exercitationem ipsam minima. Exercitationem necessitatibus harum nostrum sint alias nisi aliquam.</p>
+             <button class="btn btn-warning text-dark">Read More</button>
+           </div>
+         </div> 
+      </div>
+      <div class="col-lg-4 col-12 col-md-12 ">
+        <div class="card text-center bg-white pb-2">
+           <div class="card-body text-dark">
+            <div class="img-area mb-4">
+             <img src="photo/project-2.jpg" class="img-fluid" alt="">
+             </div>
+             <h3 class="card-title">Building Make</h3>
+             <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident exercitationem ipsam minima. Exercitationem necessitatibus harum nostrum sint alias nisi aliquam.</p>
+             <button class="btn btn-warning text-dark">Read More</button>
+           </div>
+         </div> 
+      </div>
+      <div class="col-lg-4 col-12 col-md-12 ">
+        <div class="card text-center bg-white pb-2">
+           <div class="card-body text-dark">
+            <div class="img-area mb-4">
+             <img src="photo/project-3.jpg" class="img-fluid" alt="">
+             </div>
+             <h3 class="card-title">Building Make</h3>
+             <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident exercitationem ipsam minima. Exercitationem necessitatibus harum nostrum sint alias nisi aliquam.</p>
+             <button class="btn btn-warning text-dark">Read More</button>
+           </div>
+         </div> 
+      </div>
+    </div>
+  </div>
+</section>
+                       <!--  TEAM section -->
+
+<section id="Team" class="team-section-padding">
+  <div class="container">
+     <div class="row">
+      <div class="col-md-12">
+        <div class="section-header text-center pb-5">
+          <h2>Team Members</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis.</p>
+          <div class="line"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-3 teeam">
+        <div class="card text-center">
+          <div class="card-body">
+            <img src="photo/team-1.jpg" alt="" class="img-fluid rounded-circle">
+            <h3 class="card-tittle py-2">Nur Ali</h3>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, explicabo.</p>
+            <p class="socials text-dark mx-2">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-linkedin"></i>
+             <i class="fa-brands fa-square-instagram"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+       <div class="col-12 col-md-6 col-lg-3 teeam">
+        <div class="card text-center">
+          <div class="card-body">
+            <img src="photo/team-2.jpg" alt="" class="img-fluid rounded-circle">
+            <h3 class="card-tittle py-2">Golam Ali</h3>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, explicabo.</p>
+            <p class="socials text-dark mx-2">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-linkedin"></i>
+              <i class="fa-brands fa-square-instagram"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+       <div class="col-12 col-md-6 col-lg-3 teeam">
+        <div class="card text-center">
+          <div class="card-body">
+            <img src="photo/team-3.jpg" alt="" class="img-fluid rounded-circle">
+            <h3 class="card-tittle py-2">Misha Ali</h3>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, explicabo.</p>
+            <p class="socials text-dark mx-2">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+       <div class="col-12 col-md-6 col-lg-3 teeam">
+        <div class="card text-center">
+          <div class="card-body">
+            <img src="photo/team-4.jpg" alt="" class="img-fluid rounded-circle">
+            <h3 class="card-tittle py-2">Rina Khan</h3>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, explicabo.</p>
+            <p class="socials text-dark mx-2">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-linkedin"></i>
+             <i class="fa-brands fa-square-instagram"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+                          
+               <!--  Accordian Section -->
+
+<section id="faq" class="faq section-padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-header text-center pb-5">
+          <h2>FAQ</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis.</p>
+          <div class="line"></div>
+        </div>
+      </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="card bg-light">
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+  <div class="accordion-item bg-light text-danger">
+    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+      <button class="accordion-button btn btn-outline-warning text-danger" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+        Question no.1
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+      <div class="accordion-body">
+        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item  bg-light text-danger">
+    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+      <button class="accordion-button collapsed btn btn-warning text-danger" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+        Question no.2
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+      <div class="accordion-body">
+        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item  bg-light text-danger">
+    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+      <button class="accordion-button collapsed btn btn-warning text-danger" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+        Question no.3
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+      <div class="accordion-body">
+        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item  bg-light text-danger">
+    <h2 class="accordion-header" id="panelsStayOpen-headingfour">
+      <button class="accordion-button collapsed  btn btn-warning text-danger" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsefour" aria-expanded="false" aria-controls="panelsStayOpen-collapsefour">
+        Question no.4
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapsefour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingfour">
+      <div class="accordion-body">
+        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item  bg-light text-danger">
+    <h2 class="accordion-header" id="panelsStayOpen-headingfive">
+      <button class="accordion-button collapsed  btn btn-warning text-danger" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsefive" aria-expanded="false" aria-controls="panelsStayOpen-collapsefive">
+        Question no.5
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapsefive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingfive">
+      <div class="accordion-body">
+        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+                  <!--  customer review section -->
+
+<section id="cr" class="cr-section-padding">
+     <div class="container">
+       <div class="row">
+      <div class="col-12">
+        <div class="section-header text-center pb-5">
+          <h2>Customer Reviews</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis.</p>
+          <div class="line"></div>
+        </div>
+      </div>
+      </div>
+      <div class="row bg-light">
+        <div class="col-4">
+            <h6 class="text-center m-3">
+            <i class="fa-solid fa-star text-danger"></i>
+            <i class="fa-solid fa-star text-danger"></i>
+            <i class="fa-solid fa-star text-danger"></i>
+            <i class="fa-solid fa-star text-danger"></i>
+            <i class="fa-solid fa-star text-danger"></i>
+          </h6>
+        <blockquote>
+          <p class="text-muted text-center mt-1 border border-dark p-2 bg-white"><i class="fa-solid fa-2x fa-quote-left text-left p-1 icn text-warning" ></i>Stay away from those people who try to disparage your ambitions. Small minds will always do that, but great minds will give you a feeling that you can become great too.</p>
+          <footer class="blockquote-footer text-center mt-2">
+            Written by <cite class="text-warning cite">Mark Twain</cite>
+          </footer>
+        </blockquote>   
+       </div>
+        <div class="col-4">
+            <h6 class="text-center m-3">
+            <i class="fa-solid fa-star text-danger"></i>
+            <i class="fa-solid fa-star text-danger"></i>
+            <i class="fa-solid fa-star text-danger"></i>
+            <i class="fa-solid fa-star text-danger"></i>
+            <i class="fa-solid fa-star text-danger"></i>
+          </h6>
+        <blockquote>
+          <p class="text-muted text-center mt-1 border border-dark p-2 bg-white"><i class="fa-solid fa-2x fa-quote-left text-left p-1 icn text-warning" ></i>Stay away from those people who try to disparage your ambitions. Small minds will always do that, but great minds will give you a feeling that you can become great too.</p>
+          <footer class="blockquote-footer text-center mt-2">
+            Written by <cite class="text-warning cite">Mark Twain</cite>
+          </footer>
+        </blockquote>   
+       </div>
+        <div class="col-4">
+            <h6 class="text-center m-3">
+            <i class="fa-solid fa-star text-danger"></i>
+            <i class="fa-solid fa-star text-danger"></i>
+            <i class="fa-solid fa-star text-danger"></i>
+            <i class="fa-solid fa-star text-danger"></i>
+            <i class="fa-regular fa-star text-danger"></i>
+          </h6>
+        <blockquote>
+          <p class="text-muted text-center mt-1 border border-dark p-2 bg-white"><i class="fa-solid fa-2x fa-quote-left text-left p-1 icn text-warning" ></i>Stay away from those people who try to disparage your ambitions. Small minds will always do that, but great minds will give you a feeling that you can become great too.</p>
+          <footer class="blockquote-footer text-center mt-2">
+            Written by <cite class="text-warning cite">Mark Twain</cite>
+          </footer>
+        </blockquote>   
+       </div>
+      </div>
+  </div> 
+</section>
+ 
+
+ <!-- Contact section -->
+
+
+<section id="contact" class="contact section-padding">
+  <div class="container">
+     <div class="row">
+      <div class="col-12">
+        <div class="section-header text-center pb-5">
+          <h2>Contact Info</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis.</p>
+          <div class="line"></div>
+        </div>
+      </div>
+      </div>
+     <form class="bg-light p-4 m-auto" action="#">
+        <div class="row m-0">
+        <div class="col-md-12 p-0 pt-0 p-4 pb-4">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="mb-3">
+                <input type="text" name="" id="" class="form-control" required placeholder="Your Full Name">
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="mb-3">
+                <input type="Email" name="" id="" class="form-control" required placeholder="Your Email">
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="mb-3">
+                <textarea rows="3" class="form-control" required class="form-control"placeholder="Your Quary"></textarea>
+              </div>
+            </div>
+            <button class="btn btn-warning btn-lg btn-block mt-3">Send now</button>
+            </div>
+          </div>
+        </div>
+     </form>
+      </div>
+      </div>
+</section>
+                       <!--   footer section -->
+
+<footer class="bg-dark text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4 pb-0">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+
+      <!-- Twitter -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-twitter"></i
+      ></a>
+
+      <!-- Google -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-google"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+
+      <!-- Linkedin -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+
+      <!-- Github -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-github"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.3);">
+    © 2020 Copyright:BUILDCON.com
+  </div>
+  <!-- Copyright -->
+</footer>
+
+
+
+
+<script src="js/bootstrap.js"></script>
+</body>
+</html>
